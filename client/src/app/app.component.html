@@ -1,1 +1,17 @@
-<div> TACO VS PIZZA </div>
+<canvas baseChart
+        [data]="barChartData"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [type]="'bar'">
+</canvas>
+
+
+<button class="vote-button" (click)="voteTaco()">Vote 🌮</button>
+<button class="vote-button" (click)="votePizza()">Vote 🍕</button>
+
+<br />
+<br />
+<br />
+
+<button (click)="startVote()">start</button>

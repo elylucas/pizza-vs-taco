@@ -24,6 +24,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Set up Node.js
+      working-directory: ./server
       uses: actions/setup-node@v3
       with:
         node-version: ${{ env.NODE_VERSION }}
